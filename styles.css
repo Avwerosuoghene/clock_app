@@ -326,10 +326,16 @@ blockquote {
         width: 20px;
     }
 
+
+    .lower-section {
+        padding-top: 20px;
+        justify-content:start ;
+    }
+
     .more-details {
         height: 35px;
         width: 100px;
-        margin-top: 60px;
+        margin-top: 50px;
         padding-left: 20px;
     }
 
