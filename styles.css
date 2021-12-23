@@ -144,7 +144,7 @@ blockquote {
 
 .morning-greet {
     display: flex;
-    width: 60%;
+    width: 100%;
     justify-content: left;
     align-items: center;
 }
@@ -326,10 +326,17 @@ blockquote {
         width: 20px;
     }
 
+    .lower-section, .upper-section, .mezanine-section {
+        width: 90%;
+    }
 
     .lower-section {
         padding-top: 20px;
         justify-content:start ;
+    }
+
+    .morning-greet {
+        width: 100%;
     }
 
     .more-details {
