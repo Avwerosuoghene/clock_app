@@ -1,25 +1,24 @@
 const detailsButton = document.querySelector(".more-details");
+const clockConatiner = document.querySelector(".clock-container")
 
 
 detailsButton.addEventListener ("click", (e) => {
+    
+    const detailIcon = document.querySelector (".detail-icon");
+    const detailText = document.querySelector(".detail-text");
     const iconArray = ["assets/desktop/icon-arrow-down.png", "assets/desktop/icon-arrow-up.png"]
-    
-    window.onload = function () {
-        const imagePath = e.target.querySelector("img");
-        const imageSource = imagePath.getAttribute("src");
+    const detailIconSRC = detailIcon.getAttribute("src");
 
-        const buttonText = e.target.querySelector("p").innerText;
-        console.log(buttonText);
+    if (detailIconSRC == iconArray[0]) {
+        detailIcon.setAttribute("src", iconArray[1]);
 
-    if (imageSource == iconArray[0]) {
-        imagePath.setAttribute ("src", iconArray[1]) ;
-        buttonText.innerText = "LESS";
+        setTimeout(() => {detailText.innerText = "LESS"}, 1000);
+        
+        clockConatiner.style.transform = "translateY(-50vh)"
+        
     } else {
-        imagePath.setAttribute ("src", iconArray[0]) ;
-        buttonText.innerText = "MORE";
-    } 
+        detailIcon.setAttribute("src", iconArray[0]);
+        setTimeout(() => {detailText.innerText = "MORE"}, 1000);
+        clockConatiner.style.transform = "translateY(0vh)"
     }
-
-    window.onload()
-    
 })
