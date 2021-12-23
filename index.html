@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type = "module" src ="script.js">  </script>
+</head>
+<body>
+    
+    <div class = "background">
+        <main class="clock-container">
+            <section class="upper-section">
+                <div class="quote-container">
+                        <blockquote>
+                            <p>“The science of operations, as derived from mathematics more especially, 
+                                is a science of itself, and has its own abstract truth and value.”</p>
+                            <cite>Ada Lovelace</cite>
+                        </blockquote>
+                        <img id = "refresh-icon" src="assets/desktop/icon-refresh.svg" alt="refresh button">
+                </div>
+            </section>
+            <section class="lower-section">
+                    <div class="morning-greet">
+                        <img id = "day-icon" src="assets/desktop/icon-sun.svg" alt="day icon">
+                        <h3>Good Morning, It's Currently</h3>
+                    </div>
+                    <h1 class="current-time">11:37</h1>
+                    <h2 class="zone_abbv">BST</h2>
+                    <h3 class="location">IN LONDON, UK</h3>
+                    <button class="more-details">
+                        <p>MORE</p>
+                        <img src="assets/desktop/icon-arrow-down.png" alt="">
+                    </button>
+            </section>
+            <section class="mezanine-section night">
+                <div class="timezone-container">
+                    <div class="mez-left">
+                        <div class="zone-container">
+                            <p>CURRENT TIME</p>
+                            <h2 id = "time-zone">Europe/ London</h2>
+                        </div>
+                        <div class="zone-container">
+                            <p>DAY OF THE YEAR</p>
+                            <h2 id = "doy">295</h2>
+                        </div>
+                    </div>
+
+                    <div class="mez-right">
+                        <div class="zone-container">
+                            <p>DAY OF THE WEEK</p>
+                            <h2 id = "dow">5</h2>
+                        </div>
+                        <div class="zone-container">
+                            <p>WEEK NUMBER</p>
+                            <h2 id = "week-no">42</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+    </div>
+</body>
+</html>
