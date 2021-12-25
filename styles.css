@@ -126,6 +126,7 @@ blockquote {
 
 #refresh-icon:active {
     transform: scale(0.9);
+    filter: brightness(0.8);
 }
 
 
@@ -165,7 +166,7 @@ blockquote {
 .zone_abbv {
     position: absolute;
     top: 45%;
-    left: 500px;
+    left: 600px;
     margin: 0;
 }
 
@@ -355,7 +356,8 @@ blockquote {
     }
 
     .zone_abbv {
-        left: 250px;
+        top: 35%;
+        left: 280px;
     }
 
     .more-details p {

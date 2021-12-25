@@ -7,6 +7,7 @@
     <title>Clock App</title>
     <link rel="stylesheet" href="styles.css">
     <script type = "module" src ="script.js">  </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     
@@ -15,9 +16,9 @@
             <section class="upper-section">
                 <div class="quote-container">
                         <blockquote>
-                            <p>“The science of operations, as derived from mathematics more especially, 
+                            <p id = "quote">“The science of operations, as derived from mathematics more especially, 
                                 is a science of itself, and has its own abstract truth and value.”</p>
-                            <cite>Ada Lovelace</cite>
+                            <cite id = "author">Ada Lovelace</cite>
                         </blockquote>
                         <img id = "refresh-icon" src="assets/desktop/icon-refresh.svg" alt="refresh button">
                 </div>
@@ -25,7 +26,7 @@
             <section class="lower-section">
                     <div class="morning-greet">
                         <img id = "day-icon" src="assets/desktop/icon-sun.svg" alt="day icon">
-                        <h3>Good Morning, It's Currently</h3>
+                        <h3 id = "greeting">Good Morning, It's Currently</h3>
                     </div>
                     <h1 class="current-time">11:37</h1>
                     <h2 class="zone_abbv">BST</h2>
