@@ -3,7 +3,7 @@ const clockConatiner = document.querySelector(".clock-container");
 const dayIcons = ["assets/desktop/icon-sun.svg", "assets/desktop/icon-moon.svg"];
 const quoteURL = "https://programming-quotes-api.herokuapp.com/Quotes/random";
 const countriesURL = "https://api.timezonedb.com/v2.1/list-time-zone?key=D7K6G69S5O7E&format=json";
-const timeSetURL = "http://worldtimeapi.org/api/timezone/";
+const timeSetURL = "https://worldtimeapi.org/api/timezone/";
 const countriesList = [];
 const countryObjectsArray = [];
 const refreshQuote = document.getElementById("refresh-icon");
@@ -41,6 +41,8 @@ refreshQuote.addEventListener ("click", () => {
 async function getQuote () {
     const quote = document.getElementById("quote");
     const author = document.getElementById("author");
+    quote.innerText = "Loading..."
+    author.innerText = ""
 
     try {
         const { data } = await axios(quoteURL);
