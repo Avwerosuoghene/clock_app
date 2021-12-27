@@ -192,7 +192,7 @@ function pickCountry () {
 
 async function setZone (selectedZone, countryname) {
         try{
-            const {data} = await axios.get(timeSetURL + selectedZone);
+            const {data} = await axios.get(timeSetURL + selectedZone + "/");
             setParams(data, countryname)
         } catch (err) {
             console.log(err)
