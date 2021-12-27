@@ -91,7 +91,6 @@ blockquote {
     justify-items: center;
     overflow: hidden;
     transition: transform  1s ease-in-out;
-    /* transform: translateY(-50vh); */
 }
 
 /* First Section */
@@ -127,6 +126,86 @@ blockquote {
 #refresh-icon:active {
     transform: scale(0.9);
     filter: brightness(0.8);
+}
+
+.countries-container {
+    background-color: #000;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255,0.8);
+    backdrop-filter: blur(8px);
+    color: #000;
+    position: fixed;
+    top: 15%;
+    right: 10%;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    transition: 0.6s ease;
+    z-index: 2;
+}
+
+.countries-container.full {
+    height: 500px;
+    padding: 20px;
+    width: 250px;
+}
+
+.countries-container .select-country {
+    font-size: 16px;
+    font-weight: 300;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.countries-container input {
+    font-size: 16px;
+    font-weight: 300;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+}
+
+.countries-container input::placeholder {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.countries-container input:focus {
+    outline: none;
+}
+
+.countries {
+    list-style-type: none;
+    margin-top:5px;
+    padding: 0;
+    overflow-y: auto;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.country:not(:last-child) {
+    border-bottom: 0.5px solid rgba(0,0,0,0.2);
+}
+
+.country {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.country.hide {
+    display: none;
+}
+
+.country:hover {
+    color: rgb(15, 82, 72);
 }
 
 
@@ -186,7 +265,7 @@ blockquote {
     font-family: inherit;
     padding-left: 30px;
     position: absolute;
-    bottom: 30%;
+    bottom: 15%;
     right: 0;
     cursor: pointer;
     filter: brightness(1);
@@ -265,7 +344,9 @@ blockquote {
     }
 
 
-    
+    .countries-container {
+        top: 35%;
+    }
 
     .quote-container {
         width: 80%;
@@ -317,6 +398,55 @@ blockquote {
 
     .background.night {
         background-image: url("assets/mobile/bg-image-nighttime-750.jpg");
+    }
+
+    .countries-container {
+        width: 120px;
+        height: 30px;
+        border-radius: 20px;
+        top: 30%;
+        padding: 6px 10px;
+    }
+
+    .countries-container.full {
+        height: 300px;
+        padding: 15px 10px;
+        width: 200px;
+    } 
+
+    .countries-container .select-country {
+        font-size: 12px;
+        font-weight: 300;
+        
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+    .countries-container input {
+        font-size: 12px;
+        font-weight: 300;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    
+    .countries-container input::placeholder {
+        font-size: 12px;
+        font-weight: 300;
+    }
+    
+    
+    .countries {
+        font-size: 12px;
+    }
+    
+    .country:not(:last-child) {
+        border-bottom: 0.5px solid rgba(0,0,0,0.2);
+    }
+    
+    .country {
+        padding: 5px;
+        cursor: pointer;
     }
 
     .quote-container {

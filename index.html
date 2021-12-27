@@ -6,31 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clock App</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script type = "module" src ="script.js">  </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     
     <div class = "background">
+        <div class="countries-container">
+                    <div class="country-select">
+                        <div class = "select-country" >Select Country 
+                            <span><i class="fas fa-chevron-down"></i></span></div>
+                    </div>
+                    <input type="text" class = "search-country" placeholder="Search">
+                    <ul class="countries">
+                      <li class = "country">Getting Countr...</li>
+                    </ul>
+                </div>
         <main class="clock-container">
             <section class="upper-section">
                 <div class="quote-container">
                         <blockquote>
-                            <p id = "quote">“The science of operations, as derived from mathematics more especially, 
-                                is a science of itself, and has its own abstract truth and value.”</p>
-                            <cite id = "author">Ada Lovelace</cite>
+                            <p id = "quote">“Getting Quote...”</p>
+                            <cite id = "author"></cite>
                         </blockquote>
                         <img id = "refresh-icon" src="assets/desktop/icon-refresh.svg" alt="refresh button">
                 </div>
+                
             </section>
             <section class="lower-section">
                     <div class="morning-greet">
                         <img id = "day-icon" src="assets/desktop/icon-sun.svg" alt="day icon">
-                        <h3 id = "greeting">Good Morning, It's Currently</h3>
+                        <h3 id = "greeting">Loading...</h3>
                     </div>
-                    <h1 class="current-time">11:37</h1>
-                    <h2 class="zone_abbv">BST</h2>
-                    <h3 class="location">IN LONDON, UK</h3>
+                    <h1 class="current-time">00:00</h1>
+                    <h2 class="zone_abbv">...</h2>
+                    <h3 class="location">Getting Location...</h3>
                     <button class="more-details">
                         <p class = "detail-text">MORE</p>
                         <img class = "detail-icon" src="assets/desktop/icon-arrow-down.png" alt="">
@@ -41,22 +52,22 @@
                     <div class="mez-left">
                         <div class="zone-container">
                             <p>CURRENT TIME</p>
-                            <h2 id = "time-zone">Europe/ London</h2>
+                            <h2 id = "time-zone">Loading...</h2>
                         </div>
                         <div class="zone-container">
                             <p>DAY OF THE YEAR</p>
-                            <h2 id = "doy">295</h2>
+                            <h2 id = "doy">000</h2>
                         </div>
                     </div>
 
                     <div class="mez-right">
                         <div class="zone-container">
                             <p>DAY OF THE WEEK</p>
-                            <h2 id = "dow">5</h2>
+                            <h2 id = "dow">0</h2>
                         </div>
                         <div class="zone-container">
                             <p>WEEK NUMBER</p>
-                            <h2 id = "week-no">42</h2>
+                            <h2 id = "week-no">00</h2>
                         </div>
                     </div>
                 </div>
